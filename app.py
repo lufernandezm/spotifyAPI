@@ -1,11 +1,5 @@
-from flask import Flask, jsonify, request
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-from sqlalchemy.orm.exc import UnmappedInstanceError
-from sqlalchemy.exc import IntegrityError
+from flask import Flask, jsonify
 from models.db import db
-from models.artists import Artist
-from models.albums import Album
 from schemes.ma import ma
 from routes.artists import artists_bp
 from routes.albums import albums_bp

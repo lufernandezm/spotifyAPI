@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify
 from sqlalchemy.orm.exc import UnmappedInstanceError
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm.exc import FlushError
 from controllers.playlists import getPlaylists, getPlaylist, createPlaylist, updatePlaylist, deletePlaylist
 
 playlists_bp = Blueprint('playlists', __name__)
@@ -27,6 +28,10 @@ def createPlaylists():
     except IntegrityError as err:
         print('playlist not created', err)
         return {'message': 'There is already an playlist with the same id'}, 400
+
+    except FlushError as err:
+        print('album not created', err)
+        return {'message': 'Track(s) id does not exist.'}, 400
 
 
 @playlists_bp.route('/playlists/<string:id>', methods=['PUT'])

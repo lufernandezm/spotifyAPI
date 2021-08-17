@@ -26,7 +26,6 @@ def createGenre():
     name = request.json["name"]
     genre = Genre.query.filter_by(name=name).first()
 
-    # try:
     if genre is None:
         new_genre = Genre(name)
         db.session.add(new_genre)

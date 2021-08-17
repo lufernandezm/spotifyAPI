@@ -15,7 +15,6 @@ class Album(db.Model):
     release_date = db.Column(db.String(45))
     album_ids = db.relationship('Track', backref='album_ids')
 
-
     def __init__(self, id, name, uri, url, href, total_tracks, popularity, img, label, release_date):
         self.id = id
         self.name = name

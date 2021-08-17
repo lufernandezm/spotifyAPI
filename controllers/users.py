@@ -1,4 +1,4 @@
-from flask import jsonify, request
+from flask import request
 from models.users import User
 from models.db import db
 from schemes.users import userSchema

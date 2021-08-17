@@ -1,7 +1,6 @@
 from flask import request
 from models.tracks import Track
 from models.artists import Artist
-from models.playlists import Playlist
 from models.db import db
 from schemes.tracks import trackSchema
 
@@ -32,13 +31,11 @@ def createTrack():
     duration_ms = request.json["duration_ms"],
     popularity = request.json["popularity"],
     album_id = request.json["album_id"],
-    artists = request.json["artists"],
-    playlists = request.json["playlists"]
+    artists = request.json["artists"]
 
     new_track = Track(id, name, uri, url, href, duration_ms, popularity, album_id)
     db.session.add(new_track)
     db.session.commit()
-
 
     if len(artists) > 0:
         for i in range(len(artists)):
