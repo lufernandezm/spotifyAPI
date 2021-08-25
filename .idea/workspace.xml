@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72a55f8-80d9-4fd3-9b03-0cb459049ca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db_files/nc_spotify_api.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_files/nc_spotify_api.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/albums.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/albums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/artists.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/artists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tracks.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tracks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

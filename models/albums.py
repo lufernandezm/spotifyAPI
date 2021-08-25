@@ -13,7 +13,7 @@ class Album(db.Model):
     img = db.Column(db.String(45), nullable=True)
     label = db.Column(db.String(45), nullable=True)
     release_date = db.Column(db.String(45))
-    album_ids = db.relationship('Track', backref='album_ids')
+    tracks = db.relationship('Track', backref='relate_album')
 
     def __init__(self, id, name, uri, url, href, total_tracks, popularity, img, label, release_date):
         self.id = id
