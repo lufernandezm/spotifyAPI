@@ -14,6 +14,14 @@ Date: 2021-08-16 07:14:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+
+-- -----------------------------------------------------
+-- Schema spotify_api
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `spotify_api` DEFAULT CHARACTER SET utf8 ;
+USE `spotify_api` ;
+
 -- ----------------------------
 -- Table structure for `albums`
 -- ----------------------------
@@ -45,7 +53,6 @@ CREATE TABLE `tracks` (
   `name` varchar(45) NOT NULL,
   `popularity` int(11) NOT NULL,
   `duration_ms` int(11) NOT NULL,
-  `type` varchar(45) NOT NULL,
   `uri` varchar(45) NOT NULL,
   `url` varchar(45) NOT NULL,
   `href` varchar(45) NOT NULL,
@@ -68,7 +75,6 @@ CREATE TABLE `artists` (
   `name` varchar(45) NOT NULL,
   `followers` int(11) NOT NULL,
   `popularity` int(11) NOT NULL,
-  `type` varchar(45) NOT NULL,
   `uri` varchar(45) NOT NULL,
   `url` varchar(45) NOT NULL,
   `href` varchar(45) NOT NULL,
@@ -102,7 +108,6 @@ CREATE TABLE `users` (
   `id` varchar(45) NOT NULL,
   `name` varchar(45) NOT NULL,
   `followers` int(11) NOT NULL,
-  `type` varchar(45) NOT NULL,
   `uri` varchar(45) NOT NULL,
   `url` varchar(45) NOT NULL,
   `href` varchar(45) NOT NULL,
@@ -123,7 +128,6 @@ CREATE TABLE `playlists` (
   `name` varchar(45) NOT NULL,
   `description` text DEFAULT NULL,
   `followers` int(11) NOT NULL DEFAULT 0,
-  `type` varchar(45) NOT NULL,
   `uri` varchar(45) NOT NULL,
   `url` varchar(45) NOT NULL,
   `href` varchar(45) NOT NULL,

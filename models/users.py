@@ -8,8 +8,8 @@ class User(db.Model):
     uri = db.Column(db.String(45))
     url = db.Column(db.String(45))
     href = db.Column(db.String(45))
-    followers = db.Column(db.Integer)
-    img = db.Column(db.String(45))
+    followers = db.Column(db.Integer, nullable=True)
+    img = db.Column(db.String(45), nullable=True)
     user_ids = db.relationship('Playlist', backref='user_ids')
 
     def __init__(self, id, name, uri, url, href, followers, img):

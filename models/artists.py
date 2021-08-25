@@ -18,9 +18,9 @@ class Artist(db.Model):
     uri = db.Column(db.String(45))
     url = db.Column(db.String(45))
     href = db.Column(db.String(45))
-    followers = db.Column(db.Integer)
-    popularity = db.Column(db.Integer)
-    img = db.Column(db.String(45))
+    followers = db.Column(db.Integer, nullable=True)
+    popularity = db.Column(db.Integer, nullable=True)
+    img = db.Column(db.String(45), nullable=True)
     album_artist = db.relationship('Album', secondary=albums_artists, backref=db.backref('relate_artist'), lazy='dynamic')
     artist_track = db.relationship('Track', secondary=artists_tracks, backref=db.backref('relate_artist'), lazy='dynamic')
 

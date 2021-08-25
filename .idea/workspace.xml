@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f72a55f8-80d9-4fd3-9b03-0cb459049ca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db_files/nc_spotify_api.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_files/nc_spotify_api.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/albums.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/albums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/artists.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/artists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tracks.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tracks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/users.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wr2xJdIoJf0TRraggwsbkHdb8S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f72a55f8-80d9-4fd3-9b03-0cb459049ca4" name="Default Changelist" comment="" />
+      <created>1629202631490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629202631490</updated>
+    </task>
+    <servers />
+  </component>
+</project>

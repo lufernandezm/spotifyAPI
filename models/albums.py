@@ -9,9 +9,9 @@ class Album(db.Model):
     url = db.Column(db.String(45))
     href = db.Column(db.String(45))
     total_tracks = db.Column(db.Integer)
-    popularity = db.Column(db.Integer)
-    img = db.Column(db.String(45))
-    label = db.Column(db.String(45))
+    popularity = db.Column(db.Integer, nullable=True)
+    img = db.Column(db.String(45), nullable=True)
+    label = db.Column(db.String(45), nullable=True)
     release_date = db.Column(db.String(45))
     album_ids = db.relationship('Track', backref='album_ids')
 

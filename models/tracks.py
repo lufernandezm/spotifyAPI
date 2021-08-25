@@ -14,7 +14,7 @@ class Track(db.Model):
     url = db.Column(db.String(45))
     href = db.Column(db.String(45))
     duration_ms = db.Column(db.Integer)
-    popularity = db.Column(db.Integer)
+    popularity = db.Column(db.Integer, nullable=True)
     album_id = db.Column(db.String(30), db.ForeignKey('albums.id'))
     playlist_track = db.relationship('Playlist', secondary=playlists_tracks, backref=db.backref('relate_track'), lazy=True)
 
